@@ -50,14 +50,14 @@ We're using pre-crimped leads because it's easier than soldering your own and it
 ### Step 1: Setup your Pi
  1. Flash the SD card with Raspbian.
 
- 2. Check out the code from the (fruit_genie_controller)[fruit_genie_controller] directory onto yout Pi.
+ 2. Check out the code from the [fruit_genie_controller](fruit_genie_controller) directory onto yout Pi.
 
  3. cd into the directory where you checked out the code and run npm install
 
 TODO: Little write up of what all this code is doing
 
 ### Step 2: Flash your Teensy
-1. Download the sketch (from the teensy directory)[teensy].
+1. Download the sketch [from the teensy directory](teensy).
 2. Install it.
 
 TODO: Explanation of what this code is doing
