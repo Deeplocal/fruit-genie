@@ -43,12 +43,12 @@ Our Fruit Genie setup is comprised of three main components:
 | [Pre-Crimped Leads](https://www.mouser.com/ProductDetail/Molex/79758-2022?qs=sGAEpiMZZMuMqkmPr0y6CmkaoTeibZ5dTszAT81Nx06m9a2CxUeO3A%3D%3D)   | 8    | $5.68  |
 | Fruit            | 8   | Market Price   |
 
-We're using pre-crimped leads because it's easier than soldering your and it gives you something solid to push into the fruit.  You could use regular wire and solder leads onto it, or even use solid core wire stripped at the end.
+We're using pre-crimped leads because it's easier than soldering your own and it gives you something solid to push into the fruit.  You could use regular wire and solder leads onto it, or even use solid core wire stripped at the end.
 
 ## Assembly
 
 ### Step 1: Setup your Pi
- 1. Flash the SD card with Raspbian,
+ 1. Flash the SD card with Raspbian.
 
  2. Check out the code from the (fruit_genie_controller)[fruit_genie_controller] directory onto yout Pi.
 
@@ -83,7 +83,7 @@ TODO: Explanation of what this code is doing
 ### Step 4: Test and Tune
  1. On the pi, run node app.js -- you may need to adjust the serial port depending on where you plugged your teensy into the Pi
  
- 2. Plug your headphones into the ⅛ inch jack on the Pi
+ 2. Plug your headphones into the ⅛ inch jack on the Pi.
  
  3. Tap a fruit, you should hear a sound.
 
