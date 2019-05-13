@@ -14,17 +14,17 @@ const EIGHTH_BUTTON_PRESSED_MASK      = 0b10000000
 
 const ARDUINO_CONTROLLER_BAUD         = 9600;
 
-const { fork }                = require('child_process');
-const forked                  = fork('run_genie.js');
+const { fork }                        = require('child_process');
+const forked                          = fork('run_genie.js');
 
-const buttonMap               = new Map();
-const pressedMap              = new Map();
+const buttonMap                       = new Map();
+const pressedMap                      = new Map();
 
-let LOWEST_NOTE               = 24;
-let NUM_CHANNELS              = 3;
-let NUM_BUTTONS               = 8;
-let genieReady                = false;
-let currentNotes              = [];
+let LOWEST_NOTE                       = 24;
+let NUM_CHANNELS                      = 3;
+let NUM_BUTTONS                       = 8;
+let genieReady                        = false;
+let currentNotes                      = [];
 
 const arduino = new SerialPort('/dev/ttyACM0', {
   baudRate: ARDUINO_CONTROLLER_BAUD
