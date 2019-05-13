@@ -6,9 +6,9 @@
 
 During I/O 2019, the Flaming Lips [played an ML-powered bowl of fruit](https://www.stereogum.com/2043070/watch-the-flaming-lips-play-a-bowl-of-fruit-at-google-io/video/) as part of their performance. 
 
-While you can play with an [awesome online version of Piano Genie here](https://piano-genie.glitch.me/), there’s something special about making music in a tactical way.  To that end, we wanted to share the instructions for you to be able to build your own “Fruit Genie” -- and you could even swap out the produce for buttons if you want to.  
+While you can play with an [awesome online version of Piano Genie here](https://piano-genie.glitch.me/), there’s something special about making music in a tactical way.  To that end, we wanted to share the instructions for you to be able to build your own “Fruit Genie”–-and you could even swap out the produce for buttons if you want to.  
 
-This will get you to the point where you can play the Fruit Genie and output audio from a Raspberry Pi.  From there you’ll be able to extend it to send MIDI to your DAW, or anything you would like.  A Raspberry Pi isn’t necessary either -- you should be able to get this running on any laptop or computer that can run Node and has a USB port.
+This will get you to the point where you can play the Fruit Genie and output audio from a Raspberry Pi.  From there you’ll be able to extend it to send MIDI to your DAW, or anything you would like.  A Raspberry Pi isn’t necessary either–-you should be able to get this running on any laptop or computer that can run Node and has a USB port.
 
 
 ## System Overview
@@ -58,7 +58,7 @@ TODO: Little write up of what all this code is doing
 
 ### Step 2: Flash your Teensy
 1. Download the sketch (from the teensy directory)[teensy].
-2. Install it
+2. Install it.
 
 TODO: Explanation of what this code is doing
 
