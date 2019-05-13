@@ -11,6 +11,8 @@
   "dependencies": {
     "@magenta/music": "^1.7.0",
     "@tensorflow/tfjs-node": "^1.0.2",
+    "audio-generator": "^2.1.2",
+    "audio-speaker": "^1.5.0",
     "easymidi": "^1.0.1",
     "keypress": "^0.2.1",
     "node-fetch": "^2.3.0",
