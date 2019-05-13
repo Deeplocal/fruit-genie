@@ -60,6 +60,8 @@ TODO: Little write up of what all this code is doing
 1. Download the sketch [from the teensy directory](teensy).
 2. Install it.
 
+If you haven't used a Teensy, you may need to check out [the Teensyduino installer](https://www.pjrc.com/teensy/td_download.html) to get things going.
+
 TODO: Explanation of what this code is doing
 
 
