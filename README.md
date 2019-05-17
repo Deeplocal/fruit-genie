@@ -54,6 +54,10 @@ We're using pre-crimped leads because it's easier than soldering your own and it
 
  3. cd into the directory where you checked out the code and run npm install
 
+ 4. Update the #DEFINE FIFO_DURATION from 0.5f to be 0.025f in your local node_modules/mpg123/src/output/alsa.c, node_modules/mpg123/src/output/coreaudio.c, and node_modules/mpg123/src/output/portaudio.c files. This will ensure 0 latency and deals with hardcoded buffer lengths.
+
+ 5. Run _npm rebuild_
+
 TODO: Little write up of what all this code is doing
 
 ### Step 2: Flash your Teensy
