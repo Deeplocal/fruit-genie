@@ -25,8 +25,12 @@ let NUM_CHANNELS                      = 3;
 let NUM_BUTTONS                       = 8;
 let genieReady                        = false;
 let currentNotes                      = [];
+let processing                        = false;
 
-const arduino = new SerialPort('/dev/ttyACM0', {
+SerialPort.list((err, devices) => {
+  console.log(devices)
+})
+const arduino = new SerialPort('/dev/tty.usbmodem3364981', {
   baudRate: ARDUINO_CONTROLLER_BAUD
 })
 
@@ -42,6 +46,7 @@ forked.on('message', (msg) => {
   } else {
     noteOn(msg.note + LOWEST_NOTE, msg.button)
   }
+  processing = false;
 });
 
 let channelMap = new Map();
@@ -53,9 +58,14 @@ for (let i = 0; i < NUM_CHANNELS; i++) {
   }
 }
 
+function dec2bin(dec){
+    return (dec >>> 0).toString(2);
+}
+
+
 let context = this;
 parser.on('data', (data) => {
-  let dataByte = parseInt(data);
+  let dataByte = parseInt(data.split('b')[1]);
 
   let firstButton = !(FIRST_BUTTON_PRESSED_MASK & dataByte);
   let secondButton = !(SECOND_BUTTON_PRESSED_MASK & dataByte);
@@ -85,7 +95,10 @@ handleButtonValue = function(button, value) {
   if (pressedMap.has(button)) {
     if (pressedMap.get(button) != value) {
       if (!value) {
-        forked.send({note: button})
+        if (!processing) {
+          processing = true;
+          forked.send({note: button})
+        }
       } else {
         noteOff(button)
       }
@@ -118,14 +131,14 @@ startAudioOutput = function() {
   let stream = Generator(function (time) {
       var τ = Math.PI * 2;
       let notesToPlay = []
-      for (let note of currentNotes) {
-        let frequency = Tonal.Note.freq(Tonal.Note.fromMidi(note))
+      for (let buttonMapKey of buttonMap.keys()) {
+        let frequency = Tonal.Note.freq(Tonal.Note.fromMidi(buttonMap.get(buttonMapKey)))
         notesToPlay.push(Math.sin(τ * time * frequency))
       }
       return notesToPlay;
   })
 
-  stream.pipe(Speaker({}));
+  stream.pipe(Speaker());
 }
 
 startAudioOutput();
