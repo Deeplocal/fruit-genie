@@ -58,7 +58,7 @@ We're using pre-crimped leads because it's easier than soldering your own and it
 
  5. Run _npm rebuild_
 
-TODO: Little write up of what all this code is doing
+ This application server runs on express and listens to the arduino serial input for fruit touches. The 8 inputs are compressed into one byte to reduce latency, and the sound is output using node-speaker (which pipes out to PCM).
 
 ### Step 2: Flash your Teensy
 1. Download the sketch [from the teensy directory](teensy).
