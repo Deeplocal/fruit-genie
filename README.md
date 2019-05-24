@@ -10,6 +10,8 @@ While you can play with an [awesome online version of Piano Genie here](https://
 
 This will get you to the point where you can play the Fruit Genie and output audio from a Raspberry Pi.  From there you’ll be able to extend it to send MIDI to your DAW, or anything you would like.  A Raspberry Pi isn’t necessary either–-you should be able to get this running on any laptop or computer that can run Node and has a USB port.
 
+Please note, this is all build on the great work of [@magenta/music](https://github.com/tensorflow/magenta-js/tree/master/music) 
+
 
 ## System Overview
 ![](photos/overview.jpg)
