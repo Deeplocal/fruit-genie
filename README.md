@@ -40,7 +40,7 @@ Our Fruit Genie setup is comprised of three main components:
 | Part                                                                            | Qty | Total   |
 | --------------------------------------------------------------------------------|:----| -------:|
 | [Raspberry Pi 3 CanaKit](https://www.amazon.com/gp/product/B01C6EQNNK/)         | 1   | $49.99  |
-| [Teensy USB Board 3.2](https://www.pjrc.com/store/teensy32.html/)               | 1   | $19.80  |
+| [Teensy USB Board 3.2](https://www.pjrc.com/store/teensy32.html)                | 1   | $19.80  |
 | [Micro SD Card](https://www.amazon.com/SanDisk-Ultra-microSDXC-Memory-Adapter/dp/B073JWXGNT)                   | 1   | $12.98  |
 | [Pre-Crimped Leads](https://www.mouser.com/ProductDetail/Molex/79758-2022?qs=sGAEpiMZZMuMqkmPr0y6CmkaoTeibZ5dTszAT81Nx06m9a2CxUeO3A%3D%3D)   | 8    | $5.68  |
 | Fruit            | 8   | Market Price   |
