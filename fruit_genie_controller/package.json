@@ -15,7 +15,7 @@
     "audio-speaker": "^1.5.0",
     "easymidi": "^1.0.1",
     "keypress": "^0.2.1",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "serialport": "^7.1.4",
     "simplex-noise": "^2.4.0",
     "tonal": "^3.0.0-alpha1",
